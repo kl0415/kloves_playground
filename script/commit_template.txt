@@ -1,0 +1,20 @@
+# Comments would be allowed but are ignored when checking the commit
+# message for proper format. Entries in All fields are required
+
+[BUGFIX|TASK|USERSTORY|SPEC-CHANGE] Short description of your commit
+
+# the Detailed description below must have at least 10 words or your
+# commit will fail
+ Be more descriptive of your commit here. Be specific about the changes.
+ Why was it changed; if code changes are major, describe the important pieces 
+ of those changes; and also include a "How to test:" section if necessary.
+
+ * Bullets are allowed 
+ * 1 space between asterisk and the bullet code
+ * Please do not write lines longer than 80 characters
+#
+
+
+Resolves: #put ticket IDs here. IF Rally Use R<ID>  if QC use "QC<ID>"
+Target Release: 
+

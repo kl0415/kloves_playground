@@ -1,0 +1,14 @@
+[BUGFIX] Short description of your commit
+#
+# Be more descriptive of your commit here. Be specific about the changes.
+# Why was it changed; if code changes are major, describe the important pieces 
+# of those changes; and also include a "How to test:" section if necessary.
+#
+# * Bullets are allowed 
+# * 1 space between asterisk and the bullet code
+#
+# * Please do not write lines longer than 80 characters
+#
+
+Resolves: QC14125 
+
