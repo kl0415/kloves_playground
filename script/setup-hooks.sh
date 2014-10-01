@@ -1,7 +1,7 @@
 #!/bin/bash
 HOOK_NAMES="commit-msg "
 # assuming the script is in a bin directory, one level into the repo
-HOOK_DIR=./.git/hooks
+HOOK_DIR=.git/hooks
 
 CDIR=`pwd`
 
@@ -14,6 +14,12 @@ if [ -f "$CDIR/script/commit_template.txt" ]; then
    echo "Setting up your commit template: as '$CDIR/.git/commit_template.txt"
    git config --global commit.template $CDIR/.git/commit_template.txt
 fi
+
+if [ -f "$CDIR/script/git-hooks/validate-commit-msg.rb" ]; then
+   cp $CDIR/script/git-hooks/validate-commit-msg.rb $CDIR/.git/hooks/
+   echo "Copying ruby validator to hooks dir"
+fi
+
 
 for hook in $HOOK_NAMES; do
     # If the hook already exists, is executable, and is not a symlink
